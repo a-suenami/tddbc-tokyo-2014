@@ -10,5 +10,9 @@ describe TaskCollection do
 
     before { task_collection.add(task) }
     it { expect(task_collection).to_not be_empty }
+
+    describe 'first_task' do
+      it { expect(task_collection.first_task).to eq task }
+    end
   end
 end

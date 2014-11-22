@@ -1,6 +1,7 @@
 class TaskCollection
   def initialize
     @empty = true
+    @task = nil
   end
 
   def empty?
@@ -9,5 +10,10 @@ class TaskCollection
 
   def add(task)
     @empty = false
+    @task = task
+  end
+
+  def first_task
+    @task
   end
 end
