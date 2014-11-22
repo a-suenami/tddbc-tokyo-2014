@@ -1,5 +1,13 @@
 class TaskCollection
+  def initialize
+    @empty = true
+  end
+
   def empty?
-    true
+    @empty
+  end
+
+  def add(task)
+    @empty = false
   end
 end

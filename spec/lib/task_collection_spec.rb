@@ -3,4 +3,12 @@ describe TaskCollection do
     let(:task_collection) { TaskCollection.new }
     it { expect(task_collection).to be_empty }
   end
+
+  context 'After adding a task' do
+    let(:task_collection) { TaskCollection.new }
+    let(:task) { Task.new('summary', 'description') }
+
+    before { task_collection.add(task) }
+    it { expect(task_collection).to_not be_empty }
+  end
 end
