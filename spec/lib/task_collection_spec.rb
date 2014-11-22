@@ -14,5 +14,9 @@ describe TaskCollection do
     describe 'first_task' do
       it { expect(task_collection.first_task).to eq task }
     end
+
+    describe 'last_task' do
+      it { expect(task_collection.last_task).to eq task }
+    end
   end
 end

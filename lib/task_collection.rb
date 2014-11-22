@@ -16,4 +16,8 @@ class TaskCollection
   def first_task
     @task
   end
+
+  def last_task
+    @task
+  end
 end
