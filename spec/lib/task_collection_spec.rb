@@ -12,11 +12,15 @@ describe TaskCollection do
     it { expect(task_collection).to_not be_empty }
 
     describe 'first_task' do
-      it { expect(task_collection.first_task).to eq task }
+      it 'should be added task.' do
+        expect(task_collection.first_task).to eq task
+      end
     end
 
     describe 'last_task' do
-      it { expect(task_collection.last_task).to eq task }
+      it 'should be added task.' do
+        expect(task_collection.last_task).to eq task
+      end
     end
   end
 end
